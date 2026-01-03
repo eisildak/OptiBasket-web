@@ -1,0 +1,351 @@
+{
+  "auth": {
+    "login": {
+      "success": true,
+      "data": {
+        "user": {
+          "id": "user_1",
+          "email": "test@test.com",
+          "firstName": "Max",
+          "lastName": "Mustermann",
+          "companyName": "Test GmbH",
+          "vatNumber": "DE123456789",
+          "role": "customer",
+          "status": "approved",
+          "createdAt": "2026-01-01T10:00:00Z",
+          "updatedAt": "2026-01-02T08:30:00Z"
+        },
+        "tokens": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzEiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MDQ4MDAwMDAsImV4cCI6MTcwNDgwMzYwMH0.mock_signature",
+          "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzEiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTcwNDgwMDAwMCwiZXhwIjoxNzA1NDA0ODAwfQ.mock_signature",
+          "expiresIn": 3600
+        }
+      }
+    },
+    "register": {
+      "success": true,
+      "message": "Registration successful. Waiting for admin approval.",
+      "data": {
+        "userId": "user_new",
+        "email": "newuser@company.com",
+        "status": "pending"
+      }
+    }
+  },
+  "products": [
+    {
+      "id": "1",
+      "code": "PRD001",
+      "name": "Tomaten Bio 1kg",
+      "category": "Gemüse",
+      "price": 3.99,
+      "unit": "kg",
+      "description": "Frische Bio-Tomaten aus regionalem Anbau",
+      "stock": 150,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "code": "PRD002",
+      "name": "Gurken Bio 500g",
+      "category": "Gemüse",
+      "price": 2.49,
+      "unit": "500g",
+      "description": "Knackige Bio-Gurken aus deutschem Anbau",
+      "stock": 200,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "code": "PRD003",
+      "name": "Paprika Mix 1kg",
+      "category": "Gemüse",
+      "price": 4.99,
+      "unit": "kg",
+      "description": "Bunte Paprika Mix - rot, gelb, grün",
+      "stock": 100,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "code": "PRD004",
+      "name": "Kartoffeln 2.5kg",
+      "category": "Gemüse",
+      "price": 3.49,
+      "unit": "2.5kg",
+      "description": "Festkochende Kartoffeln ideal für Salate",
+      "stock": 180,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "code": "PRD005",
+      "name": "Zwiebeln 1kg",
+      "category": "Gemüse",
+      "price": 1.99,
+      "unit": "kg",
+      "description": "Gelbe Speisezwiebeln",
+      "stock": 220,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "6",
+      "code": "PRD006",
+      "name": "Äpfel Elstar 1kg",
+      "category": "Obst",
+      "price": 2.99,
+      "unit": "kg",
+      "description": "Süß-säuerliche Tafeläpfel",
+      "stock": 160,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "7",
+      "code": "PRD007",
+      "name": "Bananen 1kg",
+      "category": "Obst",
+      "price": 1.79,
+      "unit": "kg",
+      "description": "Fairtrade Bananen",
+      "stock": 300,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "8",
+      "code": "PRD008",
+      "name": "Orangen 2kg",
+      "category": "Obst",
+      "price": 3.99,
+      "unit": "2kg",
+      "description": "Saftige Tafelorangen aus Spanien",
+      "stock": 140,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "9",
+      "code": "PRD009",
+      "name": "Erdbeeren 500g",
+      "category": "Obst",
+      "price": 4.49,
+      "unit": "500g",
+      "description": "Frische deutsche Erdbeeren (saisonal)",
+      "stock": 80,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "10",
+      "code": "PRD010",
+      "name": "Weintrauben kernlos 500g",
+      "category": "Obst",
+      "price": 3.49,
+      "unit": "500g",
+      "description": "Süße kernlose Weintrauben",
+      "stock": 120,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "11",
+      "code": "PRD011",
+      "name": "Salat Mix 200g",
+      "category": "Gemüse",
+      "price": 2.29,
+      "unit": "200g",
+      "description": "Bunter Salat Mix vorgewaschen",
+      "stock": 95,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "12",
+      "code": "PRD012",
+      "name": "Brokkoli 500g",
+      "category": "Gemüse",
+      "price": 2.99,
+      "unit": "500g",
+      "description": "Frischer Brokkoli",
+      "stock": 110,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "13",
+      "code": "PRD013",
+      "name": "Karotten 1kg",
+      "category": "Gemüse",
+      "price": 1.49,
+      "unit": "kg",
+      "description": "Knackige Möhren",
+      "stock": 250,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "14",
+      "code": "PRD014",
+      "name": "Champignons 250g",
+      "category": "Gemüse",
+      "price": 1.99,
+      "unit": "250g",
+      "description": "Braune Champignons",
+      "stock": 130,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "15",
+      "code": "PRD015",
+      "name": "Zucchini 1kg",
+      "category": "Gemüse",
+      "price": 2.79,
+      "unit": "kg",
+      "description": "Grüne Zucchini",
+      "stock": 170,
+      "imageUrl": null,
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-02T00:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_1",
+      "name": "Gemüse",
+      "description": "Frisches Gemüse aus regionalem Anbau",
+      "productCount": 10
+    },
+    {
+      "id": "cat_2",
+      "name": "Obst",
+      "description": "Frisches Obst",
+      "productCount": 5
+    },
+    {
+      "id": "cat_3",
+      "name": "Milchprodukte",
+      "description": "Frische Milchprodukte",
+      "productCount": 0
+    }
+  ],
+  "cart": {
+    "id": "cart_1",
+    "userId": "user_1",
+    "items": [],
+    "createdAt": "2026-01-02T10:00:00Z",
+    "updatedAt": "2026-01-02T10:00:00Z"
+  },
+  "priceHistory": [
+    {
+      "id": "ph_1",
+      "productId": "1",
+      "price": 3.99,
+      "timestamp": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "ph_2",
+      "productId": "1",
+      "price": 3.79,
+      "timestamp": "2025-12-26T00:00:00Z"
+    },
+    {
+      "id": "ph_3",
+      "productId": "1",
+      "price": 3.89,
+      "timestamp": "2025-12-19T00:00:00Z"
+    },
+    {
+      "id": "ph_4",
+      "productId": "1",
+      "price": 3.69,
+      "timestamp": "2025-12-12T00:00:00Z"
+    },
+    {
+      "id": "ph_5",
+      "productId": "2",
+      "price": 2.49,
+      "timestamp": "2026-01-02T00:00:00Z"
+    },
+    {
+      "id": "ph_6",
+      "productId": "2",
+      "price": 2.29,
+      "timestamp": "2025-12-26T00:00:00Z"
+    }
+  ],
+  "pendingUsers": [
+    {
+      "id": "user_pending_1",
+      "email": "pending1@company.com",
+      "firstName": "Anna",
+      "lastName": "Schmidt",
+      "companyName": "Schmidt Trading GmbH",
+      "vatNumber": "DE987654321",
+      "status": "pending",
+      "createdAt": "2026-01-01T14:30:00Z"
+    },
+    {
+      "id": "user_pending_2",
+      "email": "pending2@firma.de",
+      "firstName": "Thomas",
+      "lastName": "Müller",
+      "companyName": "Müller Großhandel",
+      "vatNumber": "DE456789123",
+      "status": "pending",
+      "createdAt": "2025-12-30T09:15:00Z"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "comp_1",
+      "userId": "user_1",
+      "comparisonDate": "2026-01-02T15:00:00Z",
+      "items": [
+        {
+          "productId": "1",
+          "productName": "Tomaten Bio 1kg",
+          "quantity": 5,
+          "yourPrice": 3.99,
+          "supplierPrice": 4.50,
+          "savings": 2.55,
+          "savingsPercentage": 11.33
+        },
+        {
+          "productId": "2",
+          "productName": "Gurken Bio 500g",
+          "quantity": 10,
+          "yourPrice": 2.49,
+          "supplierPrice": 2.79,
+          "savings": 3.00,
+          "savingsPercentage": 10.75
+        }
+      ],
+      "totalYourPrice": 44.85,
+      "totalSupplierPrice": 50.40,
+      "totalSavings": 5.55,
+      "savingsPercentage": 11.01,
+      "createdAt": "2026-01-02T15:00:00Z"
+    }
+  ]
+}
